@@ -1,13 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded:200|Catamaran&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+input {
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+input:focus {
+    outline: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    min-height: 100vh;
+}
+
+#header {
+    text-align: center;
+    margin-top: 4em;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    max-width: 60vw;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    opacity: 0.4;
+}
+
+a::after {
+    content: ' | ';
+    color: grey !important;
+    opacity: 0.8 !important;
+}
+
+a.last::after {
+    content: none;
+}
+
+.active {
+    color:orange;
+    opacity: 1;
+}
+
+.liked::before {
+    color: red;
 }
