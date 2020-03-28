@@ -31,6 +31,7 @@ function App() {
 
   const updateMeme = image => {
     setCurrentMeme(image.data.url)
+    setMemeFormText("")
   }
 
   const createFormData = object => {
